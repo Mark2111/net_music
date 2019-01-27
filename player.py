@@ -40,8 +40,9 @@ def main():
 	while True:
 		playlist()
 		print ""
+		print "Typle 'quit' to exit program"
 		x = raw_input("Enter song number:   ")
-		if x == "":
+		if x == "" or x == "quit":
 			quit()
 		play(server, int(x))
 
